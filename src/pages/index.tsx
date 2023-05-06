@@ -119,10 +119,13 @@ export default function Home() {
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
           <div className="flex flex-row">
             <div className="basis-1/2">
-              <object data="/mglogo.svg" type="image/svg+xml"/>
+              <object data="/mglogo.svg" type="image/svg+xml" />
             </div>
             <div className="basis-1/2">
-              <div className={styles.headCard}>SSSS</div>
+              <div className="flex flex-col">
+                <div className={styles.headCard}>SSSS</div>
+                <div className={styles.headCard}>AAAA</div>
+              </div>
             </div>
 
           </div>

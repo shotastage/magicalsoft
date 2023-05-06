@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import styles from './index.module.scss'
+import GlassCard from '@/components/GlassCard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -117,19 +118,20 @@ export default function Home() {
           />
         </div>
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
-          <div className="flex flex-row">
+          <div className="flex flex-row items-center">
             <div className="basis-1/2">
-              <object data="/mglogo.svg" type="image/svg+xml" />
+              <object data="/mglogo.svg" type="image/svg+xml" style={{marginRight: "1.5rem"}} />
             </div>
             <div className="basis-1/2">
               <div className="flex flex-col">
-                <div className={styles.headCard}>SSSS</div>
-                <div className={styles.headCard}>AAAA</div>
+                <GlassCard>Make magical achivement</GlassCard>
+                <GlassCard>BBB</GlassCard>
               </div>
             </div>
 
           </div>
         </div>
+
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           aria-hidden="true"

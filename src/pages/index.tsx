@@ -6,6 +6,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import styles from './index.module.scss'
 import GlassCard from '@/components/GlassCard'
+import Contact from './sections/contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -122,8 +123,8 @@ export default function Home() {
             <div className="basis-1/2">
               <object data="/mglogo.svg" type="image/svg+xml" style={{marginRight: "1.5rem"}} />
             </div>
-            <div className="basis-1/2">
-              <div className="flex flex-col">
+            <div className="basis-1/2" style={{height: "100%"}}>
+              <div className="flex flex-col justify-around">
                 <GlassCard>Make magical achivement</GlassCard>
                 <GlassCard>BBB</GlassCard>
               </div>
@@ -131,6 +132,19 @@ export default function Home() {
 
           </div>
         </div>
+
+
+
+
+
+        <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
+          <div className="flex flex-row align-start">
+            <h1 style={{fontSize: "2rem"}}>Hero Products</h1>
+          </div>
+        </div>
+
+
+
 
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -145,6 +159,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Contact />
     </div>
   )
 }

@@ -25,12 +25,12 @@ export default function Home() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Magicalsoft</span>
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
+                src="/mglogo2.svg"
+                alt="Magicalsoft Logo Image"
               />
             </a>
           </div>
@@ -121,7 +121,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl py-32 sm:py-48 lg:py-56">
           <div className="flex flex-row items-center">
             <div className="basis-1/2">
-              <object data="/mglogo.svg" type="image/svg+xml" style={{marginRight: "1.5rem"}} />
+              <object data="/mglogo2.svg" type="image/svg+xml" style={{marginRight: "1.5rem"}} />
             </div>
             <div className="basis-1/2" style={{height: "100%"}}>
               <div className="flex flex-col justify-around">
